@@ -1,0 +1,27 @@
+<section>
+  {{log this}}
+  <div class="posts-info">
+      <h3>{{currentPost.title}}</h3>
+      </br>
+      <h4>{{currentPost.username}}</h4>
+      </br>
+      <h5>{{formatDate currentPost.createdAt}}</h4>
+      </br>
+      <h5>{{currentPost.description}}</h5>
+      </div>
+      <img class="posts-pic" src="/{{currentPost.image}}" />
+    </section>
+
+    <div class="comment-section">
+      <div class="comment-box">
+          <textarea id="comment-text" class="comment-box-text"></textarea>
+          <input id="comment-button" data-postId="{{currentPost.id}}" class="comment-box-button" type="submit" value="Add a comment!"></input>
+      </div>
+        <div id="comment-list" class="comments">
+          {{#each currentPost.comments}}
+          {{> comments this}}
+          </br>
+          </br>
+          {{/each}}        
+        </div>
+      </div>

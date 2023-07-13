@@ -1,0 +1,10 @@
+<main class="main-content">
+       {{#each results}}
+       <div class="card">
+            <img class="index-pics" src="/{{this.thumbnail}}">
+            <p class="prod-info">{{this.title}}</p>
+            <p class="prod-info">{{this.description}}</p>
+            <a class="prod-info-details" href="/posts/{{this.id}}">Details</a>
+       </div>
+       {{/each}}
+ </main> 

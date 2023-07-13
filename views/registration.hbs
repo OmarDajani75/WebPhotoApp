@@ -1,0 +1,35 @@
+<form method="POST"
+      action="/users/register"
+      enctype="application/x-www-form-urlencoded">
+    <h2>Please create an account down below:</h2>
+    <label class="login" for="usrnme" required>Enter Username:</label>
+    <input class="login" type="text" id="username" name="username"/>
+    <p> Use a username that starts with a character (a-z/A-Z)</br>Use a username that is 3 or more alphanumeric characters, with at least two letters and one number. Number(s) should be at the end of the username</p>
+    <br/>
+    <br/>
+    <label class="login" for="email" required>Enter your Email:</label>
+    <input class="login" type="email" id="email" name="email"/>
+    <br/>
+    <br/>
+    <br/>
+    <label class="login" for="pwd" required>Enter Password:</label>
+    <input class="login" type="password" id="password" name="password" />
+   <p>Please make sure to use a password that is 8 or more characters and contains at least 1 upper case letter, 1 number, and 1 of the following special characters:</br> / * - + ! @ # $ ^ ~ []</p>
+    <br/>
+    <br/>
+    <label class="login" for="pwd">Confirm Password:</label>
+    <input class="login" type="password" id="conpwd" name="conpwd" />
+    <br/>
+    <br/>
+    <br/>
+    <form action="/action_page.php">
+      <input type="checkbox" id="age" required>
+      <label for="age"> I am over 13 years of age</label>
+      <br/>
+      <br/>
+      <input type="checkbox" id="TOS" required>
+      <a for="TOS"> I have read the <a class="TOSPR" href="">Terms of Service</a> and <a class="TOSPR" href="">Privacy Rules</a></label>
+      <br/>
+      <br/>
+      <input class="login" type="submit" id="subbtton" />
+    </form>

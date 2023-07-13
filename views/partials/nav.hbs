@@ -1,0 +1,23 @@
+<nav>
+      <div class="container">
+        <h1><a href="/">Eudaimonia</a></h1>
+        <div class="menu">
+           <li class="search-bar" >
+          <form class="search-bar"
+          method="GET"
+          action="/posts/search"
+          enctype="application/x-www-form-urlencoded">
+           <input class="search-text" name ="searchTerm" type="text" value="{{searchValue}}" placeholder="Search for a specific post"/>  
+           <input type="submit" class="search-button" value="Search"></input>
+          </form> 
+          <a is-active href="/">Home</a>
+    {{#if isLoggedIn}}
+     <a id="logout-button" href="/login">Logout</a>
+     {{else}}
+     <a href="/login">Login</a>
+    {{/if}}
+          <a href="/registration">Registration</a>
+          <a href="/postimage">Post</a>
+        </div>
+      </div>
+    </nav>
