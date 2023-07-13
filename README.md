@@ -1,2 +1,2 @@
 # Eudaimonia
-Web photo app project done for CSC317
+Web photo app project
